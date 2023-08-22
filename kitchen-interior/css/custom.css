@@ -1,0 +1,119 @@
+/*-- Use For Custom Styling --*/
+
+.hero-right-img-wrap img {
+    /* -webkit-mask-image: url("../images/her-masking-1.png");
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+    -webkit-mask-repeat: no-repeat; */
+}
+
+.hero-wrapper, section {
+    background: black;
+}
+
+section.alt-bg {
+    background:  #f4ebd9;
+
+}
+
+h1, h2, h3, h4, h5, h6, a, p, span, .hypertext, .nav-link {
+    color:  #f4ebd9;
+}
+
+.alt-bg h1, .alt-bg h2, .alt-bg h3, .alt-bg h4, .alt-bg h5, .alt-bg h6, .alt-bg a, .alt-bg p, .alt-bg span, .alt-bg .hypertext, .alt-bg .nav-link {
+    color: #000;
+}
+
+.inner-container {
+    width: 100%;
+    display: flex;
+}
+
+.elementor-shape {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    background: transparent;
+}
+
+.elementor-shape-bottom {
+    bottom: -1px;
+}
+
+.elementor-shape-fill {
+    fill: #f4ebd9;
+}
+
+.elementor-shape[data-negative=false].elementor-shape-bottom, .elementor-shape[data-negative=true].elementor-shape-top {
+    transform: rotate(180deg);
+}
+
+.logo-header-lg {
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 200px;
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+
+.how-we-do-box h3 {
+    margin-top: 10px;
+    font-size: 27px;
+}
+
+.services-img-wrap {
+    background-color: transparent;
+    background-image: linear-gradient(270deg, var(--e-global-color-secondary ) 60%, #DCCCAD 60%);
+    height: 600px;
+    width: 200px;
+    background: #DCCCAD;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.services-img {
+    position: relative;
+    margin-top: 30px;
+    width: 300px;
+}
+
+.how-we-do-img {
+    /* -webkit-mask-image: url(https://kit.baliniz.com/woodland/wp-content/uploads/sites/43/2022/10/Rectangle-12.png);
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+    -webkit-mask-repeat: no-repeat; */
+    /* -webkit-mask: url(https://kit.baliniz.com/woodland/wp-content/uploads/sites/43/2022/10/Rectangle-12.png); */
+    /* -webkit-mask: url(https://kit.baliniz.com/woodland/wp-content/uploads/sites/43/2022/10/Rectangle-12.png); */
+    /* -webkit-mask: url('../images/services-mask.png'); */
+    /* -webkit-mask-size: cover;
+    -webkit-mask-size: contain;
+    mix-blend-mode: darken;
+    overflow-clip-margin: content-box; 
+    /* overflow: clip;  */
+}
+
+.silhouette{
+    background: url(https://assets.codepen.io/141041/caamp-texture-02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-size: 200% 200%;
+    height: 360px;
+    width: 360px;
+    -webkit-mask: url(https://assets.codepen.io/141041/place-icon.png);
+    -webkit-mask-size: cover;
+    mix-blend-mode: darken;
+  }
+
+  .fas {
+    color: #DCCCAD;
+  }
+
+  .services-check {
+    margin-right: 10px;
+    font-size: 17px;
+  }
