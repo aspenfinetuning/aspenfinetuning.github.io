@@ -35,7 +35,7 @@ $(".contact_btn").on('click', function () {
         $.ajax({
             type: 'POST',
             // url: 'vendor/contact-mailer.php',
-            url: accessURL,
+            url: 'https://forms.un-static.com/forms/cca4457028f47fcf8f23bbe993ec9a911d060b30',
             data: str,
             dataType: 'json',
             success: function (response) {
@@ -49,7 +49,7 @@ $(".contact_btn").on('click', function () {
                 }
 
                 if ($("#result").length) {
-                    // alert("yes");
+                    // alert("success");
                     $("#result").hide().html(output).slideDown();
                     $(".contact_btn i").addClass('d-none');
                 }else{

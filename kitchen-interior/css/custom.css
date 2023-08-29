@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6, a, p, span, .hypertext, .nav-link {
     bottom: -1px;
 }
 
+
 .elementor-shape-fill {
     fill: #f4ebd9;
 }
@@ -50,6 +51,12 @@ h1, h2, h3, h4, h5, h6, a, p, span, .hypertext, .nav-link {
 .elementor-shape[data-negative=false].elementor-shape-bottom, .elementor-shape[data-negative=true].elementor-shape-top {
     transform: rotate(180deg);
 }
+
+.elementor-shape-top {
+    top: -1px;
+    transform: scale(-1, 1) !important;
+}
+
 
 .logo-header-lg {
     left: 50%;
@@ -63,6 +70,10 @@ h1, h2, h3, h4, h5, h6, a, p, span, .hypertext, .nav-link {
 .how-we-do-box h3 {
     margin-top: 10px;
     font-size: 27px;
+}
+
+section.services {
+    padding-top: 320px;
 }
 
 .services-img-wrap {
@@ -79,7 +90,7 @@ h1, h2, h3, h4, h5, h6, a, p, span, .hypertext, .nav-link {
 .services-img {
     position: relative;
     margin-top: 30px;
-    width: 300px;
+    width: 321px;
 }
 
 .how-we-do-img {
@@ -116,4 +127,8 @@ h1, h2, h3, h4, h5, h6, a, p, span, .hypertext, .nav-link {
   .services-check {
     margin-right: 10px;
     font-size: 17px;
+  }
+
+  .contact-textarea.form-control {
+    height: 155px;
   }
