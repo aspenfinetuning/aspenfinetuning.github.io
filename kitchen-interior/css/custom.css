@@ -132,3 +132,18 @@ section.services {
   .contact-textarea.form-control {
     height: 155px;
   }
+
+  .contact-sec {
+    padding-bottom: 0rem;
+  }
+
+  footer {
+    background-color: #000;
+    padding: 15px 20px;
+    font-size: 21px;
+  }
+
+  footer .center {
+    display: flex;
+    justify-content: space-between;
+  }

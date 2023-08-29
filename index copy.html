@@ -261,66 +261,64 @@
 
 <!-- Start Contact -->
 <section class="contact-sec" id="contact">
-    <div id="thank-you" class="container">
+    <div class="container">
         <div class="row align-items-top">
+            <!-- <div class="col-lg-5 order-lg-2 wow fadeInRight">
+                <div class="contact-details heading-area">
+                    <div class="contact-dots" data-dots=""></div>
+                    <h4 class="heading main-font">Head Office</h4>
+                    <p class="text alt-font">There are many variations of passages of Lorem Ipsum available, but the majority have suffered .</p>
+                    <ul>
+                        <li><i aria-hidden="true" class="las la-map-marker"></i> 123 Park Avenue, New York, United States </li>
+                        <li><i aria-hidden="true" class="las la-phone"></i>
+                            <span>+1 631 1234 5678</span>
+                            <span>+1 631 1234 5678</span>
+                        </li>
+                        <li><i aria-hidden="true" class="las la-paper-plane"></i>email@website.com</li>
+                    </ul>
+                </div>
+            </div> -->
 
-            <div  class="col-lg-12 mt-4 pt-3 mt-lg-0 pt-lg-0 wow fadeInLeft">
+            <div class="col-lg-10 mt-4 pt-3 mt-lg-0 pt-lg-0 wow fadeInLeft">
                 <!--Heading-->
-                <div id="thank-you-message" style="display: none; padding: 100px;">
-                    <div class="heading-area pb-2 text-center">
-                        <h2 class="heading">Thanks for reaching out!<br>We'll be in touch soon.</h2>
-                    </div>
+                <div class="heading-area pb-2">
+                    <h2 class="heading">Let’s Get In Touch</h2>
                 </div>
-                <div id="contact-form-area">
-                    <div class="heading-area pb-2">
-                        <h2 class="heading">Let’s Get In Touch</h2>
-                    </div>
-                </div>
-
-                    <!--Contact Form-->
-                    <form class="contact-form" id="contact-form-data" action="https://forms.un-static.com/forms/cca4457028f47fcf8f23bbe993ec9a911d060b30" method="post">
-                        <div class="row">
-                            <!--Result-->
-                            <div class="col-12" id="result"></div>
-                            <!--Left Column-->
-                            <div class="col-md-5">
-                                <div class="form-group">
-                                    <input required class="form-control" id="your_name" name="userName" placeholder="Your Name" type="text">
-                                </div>
-                                <div class="form-group">
-                                    <input required class="form-control" id="your_email" name="userEmail" placeholder="Email Address" type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
-                                </div>
-                                <div class="form-group">
-                                    <input required class="form-control" id="subject" name="userSubject" placeholder="Subject" type="text">
-                                    <input name="reply-to" type="hidden" value="aspenfinetuning@gmail.com">
-                                </div>
+                <!--Contact Form-->
+                <form class="contact-form" id="contact-form-data" action="https://forms.un-static.com/forms/cca4457028f47fcf8f23bbe993ec9a911d060b30" method="post">
+                    <div class="row">
+                        <!--Result-->
+                        <div class="col-12" id="result"></div>
+                        <!--Left Column-->
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <input required class="form-control" id="your_name" name="userName" placeholder="Your Name" type="text">
                             </div>
-                            <!--Right Column-->
-                            <div class="col-md-7">
-                                <div class="form-group">
-                                    <textarea required class="form-control contact-textarea" id="message" name="userMessage" placeholder="Your Message"></textarea>
-                                </div>
+                            <div class="form-group">
+                                <input required class="form-control" id="your_email" name="userEmail" placeholder="Email Address" type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
                             </div>
-                            <!--Button-->
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-medium btn-rounded btn-green w-100 contact_btn main-font mt-4">Send Message</a>
+                            <div class="form-group">
+                                <input required class="form-control" id="subject" name="userSubject" placeholder="Subject" type="text">
+                                <input name="reply-to" type="hidden" value="aspenfinetuning@gmail.com">
                             </div>
                         </div>
-                    </form>
-
+                        <!--Right Column-->
+                        <div class="col-md-7">
+                            <div class="form-group">
+                                <textarea required class="form-control contact-textarea" id="message" name="userMessage" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                        <!--Button-->
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-medium btn-rounded btn-green w-100 contact_btn main-font mt-4">Send Message</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <div class="contact-dots" style="margin-top: 50px" data-dots=""></div>
+    <div class="contact-dots" data-dots=""></div>
 </section>
-<footer>
-    <div class="container center">
-        <p>aspenfinetuning@gmail.com</p>
-        <i aria-hidden="true" className="fas fa-phone services-check" /></i>
-        <p><i aria-hidden="true" className="fas fa-phone services-check" /></i>(970) 274-8227</p>
-        <p>Copyright © <span id="year"></span> Aspen Fine Tuning</p>
-    </div>
-</footer>
 <!--Contact End-->
 
 <!-- JavaScript -->
@@ -339,24 +337,6 @@
 <!-- CUSTOM JS -->
 <!-- <script src="vendor/js/contact_us.js"></script> -->
 <script src="kitchen-interior/js/script.js"></script>
-
-<script>
-    let url = window.location.href;
-    let thankYouPage = false;
-
-    if(url.includes('#thank-you')){
-      const queryString = window.location.search;
-        thankYouPage = true;
-        $('#contact-form-area').hide()
-        $('#thank-you-message').show();
-        console.log('this is the thank you ara')
-
-    }
-
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-
-
-</script>
 
 </body>
 </html>
