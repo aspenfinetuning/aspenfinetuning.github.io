@@ -300,7 +300,7 @@
                             </div>
                             <!--Button-->
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-medium btn-rounded btn-green w-100 contact_btn main-font mt-4">Send Message</a>
+                                <button class="g-recaptcha" data-sitekey="6LdF9uQnAAAAAMIyud66XfqylfNealkjXwa4Wec1" data-callback="onSubmit" type="submit" class="btn btn-medium btn-rounded btn-green w-100 contact_btn main-font mt-4">Send Message</a>
                             </div>
                         </div>
                     </form>
@@ -332,6 +332,12 @@
 <!-- Map JS -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4fusEY9kSwNHgtK8KOgyoTsyP5Tb2NXo"></script>
 <script src="kitchen-interior/js/map.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
+</script>
 
 <!-- CUSTOM JS -->
 <!-- <script src="vendor/js/contact_us.js"></script> -->
